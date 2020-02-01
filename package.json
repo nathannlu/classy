@@ -1,0 +1,22 @@
+{
+  "name": "classificator",
+  "version": "1.0.0",
+  "description": "Nathan is a god",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "nathan",
+  "license": "MIT",
+  "dependencies": {
+    "classificator": "^0.3.3",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.16.3"
+  }
+}
