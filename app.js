@@ -8,9 +8,9 @@ classifier.learn('computer, laptop, phone, tablet, printer, scanners', 'tech');
 app.get('/:tags', (req, res) => {
   const tags = req.params.tags;
   console.log(tags);
-  const input = 'notebook,laptop,computer,portable computer,scanner,technology';
-  const categorizedTags = classifier.categorize(input);
-  res.send(categorizedTags);
+  //const input = 'notebook,laptop,computer,portable computer,scanner,technology';
+  const categorizedTags = classifier.categorize(tags);
+  res.json(categorizedTags);
 })
 
 app.listen(process.env.PORT || 9000, () => {
