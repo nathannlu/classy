@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bayes = require('classificator');
 const classifier = bayes();
+const cors = require('cors');
 
 classifier.learn('computer, laptop, phone, tablet, printer, scanners', 'tech');
 
